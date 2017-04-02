@@ -1,3 +1,23 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <div style="display:flex;height:150px;">
+        <div style="flex:1;padding:5px;">
+            <img class="img" src="../assets/images/4.png">
+        </div>
+        <div class="right">
+            <div class="lala">
+                <div class="title"><h1>job.ly</h1></div>
+                <div class="tagline"><p>The easiest place to find jobs</p></div>
+            </div>
+            <div class="links">
+                <div class="col-s-12">
+                    <nav>
+                        <a routerLink="/user" routerLinkActive="active">Profile</a>
+                        <a routerLink="/jobs" routerLinkActive="active">Your Job Post</a>
+                        <a routerLink="/find" routerLinkActive="active">Find Jobs</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
