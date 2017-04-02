@@ -4,8 +4,8 @@ import { FormsModule }          from '@angular/forms'
 import { HttpModule }           from '@angular/http'
 import { AppComponent }         from './app.component'
 import { UserComponent }        from './user/user.component'
-import { AppRoutingModule }     from './app-routing.module';
 import { NotFoundComponent }    from './not-found/not-found.component'
+import { AppRoutingModule }     from './app-routing.module';
 import { JobPostModule}         from './job-post/job-post.module'
 import { FindJobModule}         from './find-job/find-job.module'
 @NgModule({
