@@ -1,3 +1,15 @@
-<p>
-  user works!
-</p>
+<h1>Your Profile</h1>
+
+<div *ngIf="user">
+    <!--<img src="user.photos">-->
+    <p>{{user.name}}</p>
+    <p>{{user.email}}</p>
+    <p>{{user.phone}}</p>
+    <p>{{user.joindate}}</p>
+    <p *ngFor="let x of user.education;let i = index">
+        <input type="text" value="{{x}}">
+        <button (click)="delete(i)">delete</button>
+    </p>
+    <button (click)="addnew()">Add</button>
+    <button (click)="Save()">Save</button>
+</div>

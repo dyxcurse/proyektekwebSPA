@@ -8,6 +8,9 @@ import { NotFoundComponent }    from './not-found/not-found.component'
 import { AppRoutingModule }     from './app-routing.module';
 import { JobPostModule}         from './job-post/job-post.module'
 import { FindJobModule}         from './find-job/find-job.module'
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api'
+import { InMemoryDataService }  from './in-memory-data.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +21,7 @@ import { FindJobModule}         from './find-job/find-job.module'
     BrowserModule,
     FormsModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
     JobPostModule,
     FindJobModule,
     AppRoutingModule
